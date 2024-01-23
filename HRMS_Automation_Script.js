@@ -11,7 +11,7 @@ const puppeteer = require('puppeteer-core');
   try {
     await page.goto('https://yoururl.com/Login', { waitUntil: 'networkidle0' });
 
-    // Wait for the username field to be visible
+  
     await page.waitForSelector('input[name="username"]', { visible: true, timeout: 10000 });
 
     await page.type('input[name="username"]', 'username');
