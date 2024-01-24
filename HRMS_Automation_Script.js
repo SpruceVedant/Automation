@@ -20,8 +20,8 @@ const puppeteer = require('puppeteer-core');
     await page.click('button[type="submit"]');
 
     await page.waitForNavigation();
-
-    await page.goto('https://yoururl.com/attendance/dailyattendance');
+// same url will not open because of browser cookies
+    // await page.goto('https://yoururl.com/attendance/dailyattendance');
 
     await page.click('#btnTimeOut');
 
